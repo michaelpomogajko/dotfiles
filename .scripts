@@ -1,0 +1,13 @@
+gsearch () {
+    open "https://cloudsearch.google.com/cloudsearch/search?authuser=0&q=$1"    
+}
+
+ports () {
+  if [ "$2" == "-p" ];then
+    lsof -i:3000 -t
+  elif
+  then
+    lsof -nP -i4TCP:$1 | grep LISTEN
+  fi
+  
+}

@@ -1,0 +1,11 @@
+alias lz=lazygit
+alias gc='git commit -m'
+alias gcamend='git commit --amend --no-edit'
+alias ga='git add .'
+alias docko='docker-compose'
+alias kc=kubectl
+alias cl=clear
+alias gg=lazygit
+alias ns='npm start'
+alias ni='npm i'
+alias y=z
