@@ -9,3 +9,4 @@ alias gg=lazygit
 alias ns='npm start'
 alias ni='npm i'
 alias y=z
+alias stopdocker="docker ps | awk ‘FNR == 2 {print $1}’ | xargs docker stop"
