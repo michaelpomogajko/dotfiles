@@ -1,8 +1,10 @@
+USER=$(eval whoami)
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/michaelpomogajko/.oh-my-zsh
+export ZSH=/Users/$USER/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -59,7 +61,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(sudo git zsh-syntax-highlighting, zsh-autosuggestions)
+plugins=(sudo git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -92,7 +94,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.z.sh
 
 source ~/.aliases
@@ -110,11 +111,8 @@ nvm_load
 #alias npm='unalias node; unalias npm; nvm_load; npm $@'
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/michaelpomogajko/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/michaelpomogajko/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/$USER/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/michaelpomogajko/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/michaelpomogajko/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/michaelpomogajko/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/$USER/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/michaelpomogajko/google-cloud-sdk/completion.zsh.inc'; fi
 
-# tabtab source for electron-forge package
-# uninstall by removing these lines or running `tabtab uninstall electron-forge`
-[[ -f /Users/michaelpomogajko/.npm/_npx/19556/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/michaelpomogajko/.npm/_npx/19556/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh
