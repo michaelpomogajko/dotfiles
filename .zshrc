@@ -99,6 +99,10 @@ source ~/.z.sh
 source ~/.aliases
 source ~/.scripts
 
+# envs
+COMPOSE_DOCKER_CLI_BUILD=1
+DOCKER_BUILDKIT=1
+
 nvm_load () {
   export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

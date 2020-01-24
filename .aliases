@@ -11,3 +11,4 @@ alias ni='npm i'
 alias y=z
 alias stopdocker="docker ps | awk ‘FNR == 2 {print $1}’ | xargs docker stop"
 alias fix="git diff --name-only | uniq | xargs code"
+alias gitlog="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(rese
