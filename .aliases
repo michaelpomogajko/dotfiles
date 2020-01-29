@@ -2,7 +2,6 @@ alias lz=lazygit
 alias gc='git commit -m'
 alias gcamend='git commit --amend --no-edit'
 alias ga='git add .'
-alias docko='COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose'
 alias kc=kubectl
 alias cl=clear
 alias gg=lazygit

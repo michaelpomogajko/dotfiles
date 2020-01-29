@@ -100,8 +100,8 @@ source ~/.aliases
 source ~/.scripts
 
 # envs
-COMPOSE_DOCKER_CLI_BUILD=1
-DOCKER_BUILDKIT=1
+export COMPOSE_DOCKER_CLI_BUILD=1
+export DOCKER_BUILDKIT=1
 
 nvm_load () {
   export NVM_DIR="$HOME/.nvm"
@@ -114,9 +114,9 @@ nvm_load
 #alias node='unalias node; unalias npm; nvm_load; node $@'
 #alias npm='unalias node; unalias npm; nvm_load; npm $@'
 
+
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/$USER/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/michaelpomogajko/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/michaelpomogajko/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/michaelpomogajko/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/$USER/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/michaelpomogajko/google-cloud-sdk/completion.zsh.inc'; fi
-
+if [ -f '/Users/michaelpomogajko/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/michaelpomogajko/google-cloud-sdk/completion.zsh.inc'; fi
