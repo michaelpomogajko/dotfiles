@@ -11,3 +11,8 @@ ports () {
   fi
   
 }
+
+inc-install () {
+  npx google-artifactregistry-auth ~/.npmrc
+  npm install $@
+}
