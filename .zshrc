@@ -2,9 +2,11 @@ USER=$(eval whoami)
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/$USER/.oh-my-zsh
+
+# set android emulator path
+export PATH=$PATH:/Users/michaelpomogajko/Library/Android/sdk/emulator
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -99,10 +101,6 @@ source ~/.z.sh
 source ~/.aliases
 source ~/.scripts
 
-# envs
-export COMPOSE_DOCKER_CLI_BUILD=1
-export DOCKER_BUILDKIT=1
-
 nvm_load () {
   export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -113,7 +111,6 @@ nvm_load
 
 #alias node='unalias node; unalias npm; nvm_load; node $@'
 #alias npm='unalias node; unalias npm; nvm_load; npm $@'
-
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/michaelpomogajko/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/michaelpomogajko/google-cloud-sdk/path.zsh.inc'; fi
