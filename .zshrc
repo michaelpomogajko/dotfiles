@@ -6,7 +6,8 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH=/Users/$USER/.oh-my-zsh
 
 # set android emulator path
-export PATH=$PATH:/Users/michaelpomogajko/Library/Android/sdk/emulator
+export PATH=~/Library/Android/sdk/tools:$PATH
+export PATH=~/Library/Android/sdk/platform-tools:$PATH
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
