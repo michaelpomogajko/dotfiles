@@ -6,6 +6,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH=/Users/$USER/.oh-my-zsh
 
 # set android emulator path
+export ANDROID_SDK=$HOME/Library/Android/sdk
 export PATH=~/Library/Android/sdk/tools:$PATH
 export PATH=~/Library/Android/sdk/platform-tools:$PATH
 
