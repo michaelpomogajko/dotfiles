@@ -8,6 +8,7 @@ export ZSH=/Users/$USER/.oh-my-zsh
 # set android emulator path
 export ANDROID_SDK=$HOME/Library/Android/sdk
 export PATH=$ANDROID_SDK/emulator:$ANDROID_SDK/tools:$PATH
+export PATH="$ANDROID_SDK/tools:$ANDROID_SDK/tools/bin:$ANDROID_SDK/platform-tools:$PATH"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -114,7 +115,7 @@ nvm_load
 #alias npm='unalias node; unalias npm; nvm_load; npm $@'
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/michaelpomogajko/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/michaelpomogajko/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/DE105539/y/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/DE105539/y/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/michaelpomogajko/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/michaelpomogajko/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/DE105539/y/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/DE105539/y/google-cloud-sdk/completion.zsh.inc'; fi
