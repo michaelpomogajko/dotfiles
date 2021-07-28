@@ -7,6 +7,7 @@ export ZSH=/Users/$USER/.oh-my-zsh
 
 # set android emulator path
 export ANDROID_SDK=$HOME/Library/Android/sdk
+export ANDROID_HOME=$ANDROID_SDK
 export PATH=$ANDROID_SDK/emulator:$ANDROID_SDK/tools:$ANDROID_SDK/tools/bin:$ANDROID_SDK/platform-tools:$PATH
 
 # deno path
