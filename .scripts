@@ -3,13 +3,7 @@ gsearch () {
 }
 
 ports () {
-  if [ "$2" == "-p" ];then
-    lsof -i:3000 -t
-  elif
-  then
-    lsof -nP -i4TCP:$1 | grep LISTEN
-  fi
-  
+  lsof -PiTCP -sTCP:LISTEN
 }
 
 inc-install () {
