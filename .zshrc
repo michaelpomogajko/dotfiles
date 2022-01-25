@@ -13,6 +13,8 @@ export PATH=$ANDROID_SDK/emulator:$ANDROID_SDK/tools:$ANDROID_SDK/tools/bin:$AND
 # deno path
 export PATH=/Users/$USER/.deno/bin:$PATH
 
+# npx yes
+export npm_config_yes=true
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
