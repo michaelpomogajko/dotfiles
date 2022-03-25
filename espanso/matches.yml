@@ -1,0 +1,18 @@
+matches:
+  - trigger: ;em
+    replace: michael.pomogajko@pwc.com
+
+  - trigger: ;me
+    replace: Michael Pomogajko
+  
+  - trigger: ;cl
+    replace: console.log($|$)
+
+  - trigger: ;loc3
+    replace: localhost:3000
+
+  - triggger: ;loc5
+    replace: localhost:5000
+
+  - trigger: ;loc8
+    replace: localhost:8080
