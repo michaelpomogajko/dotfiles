@@ -16,3 +16,15 @@ matches:
 
   - trigger: ;loc8
     replace: localhost:8080
+  - trigger: ;rf
+    replace: |
+              type Props = {
+              
+              }
+
+              const Fun: React.FC<Props> = () => {
+                return <div />
+              }
+
+              export default Fun
+  
