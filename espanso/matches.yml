@@ -16,7 +16,13 @@ matches:
 
   - trigger: ;loc8
     replace: localhost:8080
+
+  - trigger: ;shrug
+    label: Shrug
+    replace: '¯\_(ツ)_/¯'
+  
   - trigger: ;rf
+    label: React Function
     replace: |
               type Props = {
               
@@ -27,4 +33,3 @@ matches:
               }
 
               export default Fun
-  
