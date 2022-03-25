@@ -4,7 +4,7 @@
 # @raycast.author Michael Pomogajko
 # @raycast.description Start iTerm here
 
-# @raycast.icon 💻
+# @raycast.icon images/iTerm.icns
 # @raycast.mode silent
 # @raycast.schemaVersion 1
 
