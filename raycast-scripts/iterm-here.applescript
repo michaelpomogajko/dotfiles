@@ -1,8 +1,8 @@
 #!/usr/bin/osascript
 
-# @raycast.title Start iTerm here
+# @raycast.title iTerm start here
 # @raycast.author Michael Pomogajko
-# @raycast.description Start iTerm here
+# @raycast.description Start iTerm in currently open folder
 
 # @raycast.icon images/iTerm.icns
 # @raycast.mode silent

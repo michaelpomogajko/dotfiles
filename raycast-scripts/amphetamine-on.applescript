@@ -2,7 +2,7 @@
 
 # Install Amphetamine via Mac App Store: https://apps.apple.com/us/app/amphetamine/id937984704
 
-# @raycast.title Start Default Session
+# @raycast.title Amphetamine Start Session
 # @raycast.author James Lyons
 # @raycast.authorURL https://github.com/jamesjlyons
 # @raycast.description Start Default Amphetamine Session
