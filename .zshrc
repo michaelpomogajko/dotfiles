@@ -109,17 +109,6 @@ source ~/.z.sh
 source ~/.aliases
 source ~/.scripts
 
-nvm_load () {
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-}
-
-nvm_load
-
-#alias node='unalias node; unalias npm; nvm_load; node $@'
-#alias npm='unalias node; unalias npm; nvm_load; npm $@'
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/DE105539/y/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/DE105539/y/google-cloud-sdk/path.zsh.inc'; fi
 
