@@ -4,7 +4,6 @@ USER=$(eval whoami)
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/$USER/.oh-my-zsh
-
 # set android emulator path
 export ANDROID_SDK=$HOME/Library/Android/sdk
 export ANDROID_HOME=$ANDROID_SDK
@@ -110,14 +109,13 @@ source ~/.aliases
 source ~/.scripts
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/DE105539/y/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/DE105539/y/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f "/Users/$USER/y/google-cloud-sdk/path.zsh.inc" ]; then . "/Users/$USER/y/google-cloud-sdk/path.zsh.inc"; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/DE105539/y/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/DE105539/y/google-cloud-sdk/completion.zsh.inc'; fi
-
+if [ -f "/Users/$USER/y/google-cloud-sdk/completion.zsh.inc" ]; then . "/Users/$USER/y/google-cloud-sdk/completion.zsh.inc"; fi
 # bun completions
-[ -s "/Users/DE105539/.bun/_bun" ] && source "/Users/DE105539/.bun/_bun"
+[ -s "/Users/$USER/.bun/_bun" ] && source "/Users/$USER/.bun/_bun"
 
-# Bun
-export BUN_INSTALL="/Users/DE105539/.bun"
+# bun
+export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
