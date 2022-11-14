@@ -2,12 +2,19 @@ USER=$(eval whoami)
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+# rust path
+export PATH=$HOME/.cargo/bin:$PATH
+# brew path
+export PATH=/opt/homebrew/bin/:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/$USER/.oh-my-zsh
 # set android emulator path
 export ANDROID_SDK=$HOME/Library/Android/sdk
 export ANDROID_HOME=$ANDROID_SDK
 export PATH=$ANDROID_SDK/emulator:$ANDROID_SDK/tools:$ANDROID_SDK/tools/bin:$ANDROID_SDK/platform-tools:$PATH
+export PATH=/opt/homebrew/opt/openjdk/bin:$PATH
+export JAVA_HOME=/Users/mpomogajko001/Library/Application\ Support/JetBrains/Toolbox/apps/AndroidStudio/ch-0/213.7172.25.2113.9014738/Android\ Studio.app/Contents/jre/Contents/Home
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 
 # deno path
 export PATH=/Users/$USER/.deno/bin:$PATH
@@ -119,3 +126,10 @@ if [ -f "/Users/$USER/y/google-cloud-sdk/completion.zsh.inc" ]; then . "/Users/$
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bun completions
+[ -s "/Users/mpomogajko001/.bun/_bun" ] && source "/Users/mpomogajko001/.bun/_bun"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/mpomogajko001/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

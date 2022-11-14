@@ -10,3 +10,8 @@ inc-install () {
   npx google-artifactregistry-auth ~/.npmrc
   npm install $@
 }
+
+gcloud-activate () {
+  gcloud config configurations activate $1
+  gcloud auth application-default login
+}
