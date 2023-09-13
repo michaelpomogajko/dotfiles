@@ -141,3 +141,6 @@ export PATH="/Users/mpomogajko001/.rd/bin:$PATH"
 
 # flashlight
 export PATH="/Users/mpomogajko001/.flashlight/bin:$PATH"
+export PATH=$PATH:$HOME/.maestro/bin
+export PATH=$PATH:$HOME/.maestro/bin
+export KUBECONFIG="${KUBECONFIG}:${HOME}/.kube/config:${HOME}/.kube/cm-cloud-dev:${HOME}/.kube/cm-cloud-stage:${HOME}/.kube/cm-cloud-prod"
