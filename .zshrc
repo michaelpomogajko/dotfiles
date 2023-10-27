@@ -15,7 +15,7 @@ export ANDROID_SDK=$HOME/Library/Android/sdk
 export ANDROID_HOME=$ANDROID_SDK
 export PATH=$ANDROID_SDK/emulator:$ANDROID_SDK/tools:$ANDROID_SDK/tools/bin:$ANDROID_SDK/platform-tools:$PATH
 export PATH=/opt/homebrew/opt/openjdk/bin:$PATH
-export JAVA_HOME=/Users/mpomogajko001/Library/Application\ Support/JetBrains/Toolbox/apps/AndroidStudio/ch-0/213.7172.25.2113.9014738/Android\ Studio.app/Contents/jre/Contents/Home
+export JAVA_HOME=/opt/homebrew/Cellar/openjdk/20.0.1/libexec/openjdk.jdk/Contents/Home
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 
 # deno path
