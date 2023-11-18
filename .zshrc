@@ -114,12 +114,6 @@ source ~/.z.sh
 
 source ~/.aliases
 source ~/.scripts
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f "/Users/$USER/y/google-cloud-sdk/path.zsh.inc" ]; then . "/Users/$USER/y/google-cloud-sdk/path.zsh.inc"; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f "/Users/$USER/y/google-cloud-sdk/completion.zsh.inc" ]; then . "/Users/$USER/y/google-cloud-sdk/completion.zsh.inc"; fi
 # bun completions
 [ -s "/Users/$USER/.bun/_bun" ] && source "/Users/$USER/.bun/_bun"
 
@@ -134,11 +128,21 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="/Users/mpomogajko001/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
-
 # flashlight
 export PATH="/Users/mpomogajko001/.flashlight/bin:$PATH"
 export PATH=$PATH:$HOME/.maestro/bin
 export PATH=$PATH:$HOME/.maestro/bin
 export KUBECONFIG="${KUBECONFIG}:${HOME}/.kube/config:${HOME}/.kube/cm-cloud-dev:${HOME}/.kube/cm-cloud-stage:${HOME}/.kube/cm-cloud-prod"
+
+export PATH="/Users/mpomogajko001/Library/Application Support/fnm:$PATH"
+eval "`fnm env`"
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/mpomogajko001/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mpomogajko001/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/mpomogajko001/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mpomogajko001/google-cloud-sdk/completion.zsh.inc'; fi
