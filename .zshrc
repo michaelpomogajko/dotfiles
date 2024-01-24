@@ -146,3 +146,7 @@ if [ -f '/Users/michaelpomogajko/google-cloud-sdk/path.zsh.inc' ]; then . '/User
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/michaelpomogajko/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/michaelpomogajko/google-cloud-sdk/completion.zsh.inc'; fi
+
+# fnm
+export PATH="/Users/michaelpomogajko/Library/Application Support/fnm:$PATH"
+eval "`fnm env`"
