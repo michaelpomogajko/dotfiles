@@ -126,7 +126,11 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="/Users/$USER/.flashlight/bin:$PATH"
 export PATH=$PATH:$HOME/.maestro/bin
 export PATH=$PATH:$HOME/.maestro/bin
-export KUBECONFIG="${KUBECONFIG}:${HOME}/.kube/config:${HOME}/.kube/cm-cloud-dev:${HOME}/.kube/cm-cloud-stage:${HOME}/.kube/cm-cloud-prod"
+
+if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
+  export PATH=/opt/homebrew/opt/ruby/bin:$PATH
+  export PATH=`gem environment gemdir`/bin:$PATH
+fi
 
 # fnm
 export PATH="/Users/$USER/Library/Application Support/fnm:$PATH"
@@ -134,3 +138,9 @@ eval "`fnm env`"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/misha/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/misha/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/misha/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/misha/google-cloud-sdk/completion.zsh.inc'; fi
