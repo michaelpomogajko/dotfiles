@@ -1,5 +1,5 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+# Amazon Q pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
 USER=$(eval whoami)
 
 # If you come from bash you might have to change your $PATH.
@@ -135,9 +135,6 @@ fi
 # fnm
 export PATH="/Users/$USER/Library/Application Support/fnm:$PATH"
 eval "`fnm env`"
-
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/misha/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/misha/google-cloud-sdk/path.zsh.inc'; fi
