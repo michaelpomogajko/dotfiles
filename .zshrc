@@ -141,3 +141,4 @@ if [ -f '/Users/misha/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/misha/goo
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/misha/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/misha/google-cloud-sdk/completion.zsh.inc'; fi
+PATH=~/.console-ninja/.bin:$PATH
