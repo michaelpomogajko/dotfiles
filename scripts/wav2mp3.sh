@@ -24,7 +24,7 @@ for file in *.wav
 do
     if [ -f "$file" ]; then
         echo "Converting $file to MP3..."
-        ffmpeg -i "$file" -acodec libmp3lame -b:a 320k "${file%.wav}.mp3" --loglevel error -y
+        ffmpeg -i "$file" -acodec libmp3lame -b:a 320k "${file%.wav}.mp3" -loglevel error -y
     fi
 done
 
